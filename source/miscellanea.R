@@ -5,7 +5,7 @@ source(here::here("source", "identity-functions.R"))
 
 # helper ------------------------------------------------------------------
 
-annotate_spacing <- function(pic, x_breaks, y_breaks) {
+annotate_spacing <- function(pic, x_breaks, y_breaks, x_lim, y_lim) {
   suppressMessages(
     pic +
       theme_void(base_size = 24) + 
@@ -16,7 +16,7 @@ annotate_spacing <- function(pic, x_breaks, y_breaks) {
       ) + 
       scale_x_continuous(
         name = NULL,
-        limits = c(-2.075, 1.675), 
+        limits = x_lim, 
         expand = c(0, 0), 
         breaks = x_breaks,
         guide = guide_axis(angle = 90)
@@ -24,7 +24,7 @@ annotate_spacing <- function(pic, x_breaks, y_breaks) {
       scale_y_continuous(
         name = NULL, 
         breaks = y_breaks, 
-        limits = c(-.25, 1.25),
+        limits = y_lim,
         expand = c(0, 0)
       ) + 
       annotate(
@@ -69,18 +69,22 @@ pic <- generate_logo(
   format = NULL
 )
 
+x_lim <- c(-2.075, 1.675)
+y_lim <- c(-.25, 1.25)
+ar <- (y_lim[2] - y_lim[1]) / (x_lim[2] - x_lim[1])
+
 x_breaks <- c(-1.6, 0, .3, .35, .5, .65, .7, .85, 1, 1.2)
 y_breaks <- c(0, .2, .5, .8, 1)
 
 pic %>% 
-  annotate_spacing(x_breaks, y_breaks) %>% 
-  export_logo(here::here("formal", "logo-spacing-1.png"))
+  annotate_spacing(x_breaks, y_breaks, x_lim, y_lim) %>% 
+  export_logo(here::here("formal", "logo-spacing-1.png"), height = ar * 6)
 
 x_breaks <- c(-1.6, 0, 1.2)
 y_breaks <- c(0, .33, .66, .75, .85, 1)
 
 pic %>% 
-  annotate_spacing(x_breaks, y_breaks) %>% 
-  export_logo(here::here("formal", "logo-spacing-2.png"))
+  annotate_spacing(x_breaks, y_breaks, x_lim, y_lim) %>% 
+  export_logo(here::here("formal", "logo-spacing-2.png"), height = ar * 6)
 
 

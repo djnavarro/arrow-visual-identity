@@ -30,8 +30,8 @@ logo_version <- function(colour, background, enforce) {
   }
 }
 
-export_logo <- function(plot, path) {
-  ggsave(path, plot, width = 6, height = 6, dpi = 300)
+export_logo <- function(plot, path, height = 6) {
+  ggsave(path, plot, width = 6, height = height, dpi = 300)
 }
 
 generate_logo <- function(colour = "black", background = "white", 
