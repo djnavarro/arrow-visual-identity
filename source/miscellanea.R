@@ -6,12 +6,16 @@ source(here::here("source", "identity-functions.R"))
 # helper ------------------------------------------------------------------
 
 annotate_spacing <- function(pic, x_breaks, y_breaks, x_lim, y_lim) {
+  fs <- 6
+  ff <- "bold"
+  major_off <- .125
+  minor_off <- 0
   suppressMessages(
     pic +
       theme_void(base_size = 24) + 
       theme(
         panel.background = element_rect(fill = "white", colour = "white"),
-        panel.grid.major = element_line(colour = "grey80", size = .5),
+        panel.grid.major = element_line(colour = "grey60", size = .1),
         panel.grid.minor = element_blank()
       ) + 
       scale_x_continuous(
@@ -30,32 +34,36 @@ annotate_spacing <- function(pic, x_breaks, y_breaks, x_lim, y_lim) {
       annotate(
         geom = "text", 
         label = as.character(x_breaks * 100), 
-        x = x_breaks - .025, 
-        y = -.125,
-        size = 6, 
-        angle = 90
+        x = x_breaks - minor_off, 
+        y = -major_off,
+        size = fs, 
+        angle = 90,
+        fontface = ff
       ) +
       annotate(
         geom = "text", 
         label = as.character(x_breaks * 100), 
-        x = x_breaks - .025, 
-        y = 1.125,
-        size = 6, 
-        angle = 90
+        x = x_breaks - minor_off, 
+        y = 1 + major_off,
+        size = fs, 
+        angle = 90,
+        fontface = ff
       ) +
       annotate(
         geom = "text", 
         label = as.character(y_breaks * 100), 
-        x = -1.725, 
-        y = y_breaks + .025, 
-        size = 6
+        x = -1.6 - major_off, 
+        y = y_breaks + minor_off, 
+        size = fs,
+        fontface = ff
       ) +
       annotate(
         geom = "text", 
         label = as.character(y_breaks * 100), 
-        x = 1.325, 
-        y = y_breaks + .025, 
-        size = 6
+        x = 1.2 + major_off, 
+        y = y_breaks + minor_off, 
+        size = fs,
+        fontface = ff
       )
   )
 }
@@ -74,17 +82,10 @@ y_lim <- c(-.25, 1.25)
 ar <- (y_lim[2] - y_lim[1]) / (x_lim[2] - x_lim[1])
 
 x_breaks <- c(-1.6, 0, .3, .35, .5, .65, .7, .85, 1, 1.2)
-y_breaks <- c(0, .2, .5, .8, 1)
+y_breaks <- c(0, .2, .33, .5, .66, .74, .8, .86, 1)
 
 pic %>% 
   annotate_spacing(x_breaks, y_breaks, x_lim, y_lim) %>% 
-  export_logo(here::here("formal", "logo-spacing-1.png"), height = ar * 6)
-
-x_breaks <- c(-1.6, 0, 1.2)
-y_breaks <- c(0, .33, .66, .75, .85, 1)
-
-pic %>% 
-  annotate_spacing(x_breaks, y_breaks, x_lim, y_lim) %>% 
-  export_logo(here::here("formal", "logo-spacing-2.png"), height = ar * 6)
+  export_logo(here::here("formal", "logo-spacing.png"), height = ar * 6)
 
 

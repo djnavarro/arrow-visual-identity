@@ -64,7 +64,7 @@ generate_logo <- function(colour = "black", background = "white",
   # specify the logotype
   arrow_text <- tibble(
     x = c(-1.6, 0),
-    y = c(.8, .5),
+    y = c(.8, .495),
     text = c("APACHE", "ARROW"),
     font = c("Roboto", "Barlow"),
     weight = c("plain", "bold"),
