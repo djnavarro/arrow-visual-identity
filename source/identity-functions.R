@@ -63,12 +63,12 @@ generate_logo <- function(colour = "black", background = "white",
   
   # specify the logotype
   arrow_text <- tibble(
-    x = c(-1.6, 0),
+    x = c(-1.605, 0),
     y = c(.8, .495),
     text = c("APACHE", "ARROW"),
     font = c("Roboto", "Barlow"),
     weight = c("plain", "bold"),
-    size = c(20, 60),
+    size = c(21, 60.5), # <- the intent is really a 3:1 ratio in font size
     hjust = c("left", "right")
   )
   
