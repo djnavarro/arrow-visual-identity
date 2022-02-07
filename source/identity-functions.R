@@ -6,7 +6,8 @@ library(dplyr)
 library(tidyr)
 library(tibble)
 library(showtext)
-
+library(magick)
+library(hexify)
 
 logo_version <- function(colour, background, enforce) {
   
@@ -30,8 +31,34 @@ logo_version <- function(colour, background, enforce) {
   }
 }
 
-export_logo <- function(plot, path, height = 6) {
-  ggsave(path, plot, width = 6, height = height, dpi = 300)
+export_logo <- function(plot, path, height = 6, background = NULL) {
+  ggsave(path, plot, width = 6, height = height, dpi = 300, bg = background)
+}
+
+export_hex <- function(plot, path, border, background = NULL, border_opacity = 100) {
+  
+  # intermediate files
+  imgpath1 <- tempfile(fileext = ".png")  
+  imgpath2 <- tempfile(fileext = ".png")
+  
+  # export square image to standard 1800x1800 size
+  export_logo(plot, path = imgpath1, background = background)
+  
+  # crop the image slightly
+  img <- image_read(imgpath1)
+  img <- image_crop(img, "1300x1300", "Center")
+  image_write(img, imgpath2)
+  
+  # generate the hex sticker
+  hexify(
+    from = imgpath2,
+    to = path,
+    border_colour = border,
+    border_opacity = border_opacity
+  )
+  
+  # ensure magick pointers are collected
+  gc()
 }
 
 generate_chevron <- function() {
@@ -183,4 +210,48 @@ logo_vertical <- function(colour = "black", background = "white",
   return(invisible(pic))
 }
 
+
+hex_sticker <- function(colour = "black", background = "white", 
+                        border = colour, format = "png", formal = TRUE) {
+  
+  # load fonts
+  font_add_google("Roboto")
+  font_add_google("Barlow")
+  showtext_auto()
+  
+  # create the two components
+  arrow_text <- generate_logotype()
+  triple_chevron <- generate_logomark()
+  
+  # displacement text/arrow blocks 
+  # relative to their horizontal location
+  arrow_text <- arrow_text %>% 
+    mutate(
+      x = x + 1.3,
+      y = y + .4
+    )
+  triple_chevron <- triple_chevron %>% 
+    mutate(
+      x = x + 0,
+      y = y - .4
+    )
+  
+  # specify plot limits
+  x_limit <- c(-1.375, 2.375)
+  y_limit <- c(-1.375, 2.375)
+  
+  # construct plot
+  pic <- specify_plot(arrow_text, triple_chevron, colour, 
+                      background, x_limit, y_limit)
+
+  # build hex
+  if(!is.null(format)) {
+    export_hex(pic, "~/Desktop/hex.png", border, background)
+  }
+  
+  # invisibly return the ggplot object: note that this object won't
+  # render the way you want it to unless you export it in the exact 
+  # width, height and dpi settings noted above
+  return(invisible(pic))
+}
 

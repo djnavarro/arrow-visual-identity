@@ -115,6 +115,48 @@ annotated_logo_vertical <- function() {
   
 }
 
-annotated_logo_horizontal()
-annotated_logo_vertical()
+annotated_hex <- function() {
+  
+  pic <- hex_sticker(
+    colour = "#00000088", 
+    background = "white", 
+    formal = FALSE,
+    format = NULL
+  )
+  
+  x_breaks <- c(-.3, 0, 1.2, 1.3)
+  y_breaks <- c(-.4, .1, .6, .73, 1.06, 1.14, 1.26)
+  
+  x_lim <- c(-1.375, 2.375)
+  y_lim <- c(-1.375, 2.375)
+  
+  pic <- suppressMessages(
+      pic +
+        theme_void(base_size = 24) + 
+        theme(
+          panel.background = element_rect(fill = "white", colour = "white"),
+          panel.grid.major = element_line(colour = "grey60", size = .1),
+          panel.grid.minor = element_blank()
+        ) + 
+        scale_x_continuous(
+          name = NULL,
+          limits = x_lim, 
+          expand = c(0, 0), 
+          breaks = x_breaks,
+          guide = guide_axis(angle = 90)
+        ) +
+        scale_y_continuous(
+          name = NULL, 
+          breaks = y_breaks, 
+          limits = y_lim,
+          expand = c(0, 0)
+        )
+  )
+  
+  export_hex(pic, here::here("formal", "hex-sticker-spacing.png"), "black", "white", 66)
+}
+
+annotated_hex()
+#annotated_logo_horizontal()
+#annotated_logo_vertical()
 
