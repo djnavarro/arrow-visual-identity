@@ -1,7 +1,6 @@
 # generate Apache Arrow logos programmatically
 
 library(ggplot2)
-library(svglite)
 library(dplyr)
 library(tidyr)
 library(tibble)
@@ -37,7 +36,7 @@ export_hex <- function(plot, path, border, background = NULL, border_opacity = 1
   )
   
   # ensure magick pointers are collected
-  gc()
+  invisible(gc())
 }
 
 generate_chevron <- function() {

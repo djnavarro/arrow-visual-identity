@@ -1,2 +1,0 @@
-
-# Informal visual identity guidelines
