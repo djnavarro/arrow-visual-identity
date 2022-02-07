@@ -1,6 +1,6 @@
 
-# generates images used in the readmes
-source(here::here("source", "identity-functions.R"))
+# required functions
+source(here::here("source", "logo-functions.R"))
 
 
 # helper ------------------------------------------------------------------
@@ -70,7 +70,7 @@ annotate_spacing <- function(pic, x_breaks, y_breaks, x_lim, y_lim) {
 
 # logo spacing ------------------------------------------------------------
 
-annotated_logo_horizontal <- function() {
+create_annotated_logo_horizontal <- function(dir) {
 
   pic <- logo_horizontal(
     colour = "#00000088", 
@@ -88,11 +88,11 @@ annotated_logo_horizontal <- function() {
   
   pic %>% 
     annotate_spacing(x_breaks, y_breaks, x_lim, y_lim) %>% 
-    export_logo(here::here("formal", "horizontal-logo-spacing.png"), height = ar * 6)
+    export_logo(file.path(dir, "horizontal-logo-spacing.png"), height = ar * 6)
   
 }
 
-annotated_logo_vertical <- function() {
+create_annotated_logo_vertical <- function(dir) {
   
   pic <- logo_vertical(
     colour = "#00000088", 
@@ -111,11 +111,11 @@ annotated_logo_vertical <- function() {
   
   pic %>% 
     annotate_spacing(x_breaks, y_breaks, x_lim, y_lim) %>% 
-    export_logo(here::here("formal", "vertical-logo-spacing.png"), height = ar * 6)
+    export_logo(file.path(dir, "vertical-logo-spacing.png"), height = ar * 6)
   
 }
 
-annotated_hex <- function() {
+create_annotated_hex <- function(dir) {
   
   pic <- hex_sticker(
     colour = "#00000088", 
@@ -153,10 +153,12 @@ annotated_hex <- function() {
         )
   )
   
-  export_hex(pic, here::here("formal", "hex-sticker-spacing.png"), "black", "white", 66)
+  export_hex(
+    plot = pic, 
+    path = file.path(dir, "hex-sticker-spacing.png"),
+    border = "black", 
+    background = "white", 
+    border_opacity = 66
+  )
 }
-
-annotated_hex()
-#annotated_logo_horizontal()
-#annotated_logo_vertical()
 

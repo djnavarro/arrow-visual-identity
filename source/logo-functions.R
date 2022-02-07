@@ -212,7 +212,7 @@ logo_vertical <- function(colour = "black", background = "white",
 
 
 hex_sticker <- function(colour = "black", background = "white", 
-                        border = colour, format = "png", formal = TRUE) {
+                        format = "png", formal = TRUE) {
   
   # load fonts
   font_add_google("Roboto")
@@ -244,11 +244,6 @@ hex_sticker <- function(colour = "black", background = "white",
   pic <- specify_plot(arrow_text, triple_chevron, colour, 
                       background, x_limit, y_limit)
 
-  # build hex
-  if(!is.null(format)) {
-    export_hex(pic, "~/Desktop/hex.png", border, background)
-  }
-  
   # invisibly return the ggplot object: note that this object won't
   # render the way you want it to unless you export it in the exact 
   # width, height and dpi settings noted above
