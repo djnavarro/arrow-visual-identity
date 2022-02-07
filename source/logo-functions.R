@@ -9,27 +9,6 @@ library(showtext)
 library(magick)
 library(hexify)
 
-logo_version <- function(colour, background, enforce) {
-  
-  if(is.null(background)) {
-    if(colour == "black") {
-      return("black-text_no-bg")
-    }
-    if(colour == "white") {
-      return("white-text_no-bg")
-    }
-  }
-  if(colour == "black" & background == "white") {
-    return("black-text_white-bg")
-  }
-  if(colour == "white" & background == "black") {
-    return("white-text_black-bg")
-  }
-  
-  if(enforce == TRUE) {
-    stop("to use informal logos, set 'formal = FALSE'", call. = FALSE)
-  }
-}
 
 export_logo <- function(plot, path, height = 6, background = NULL) {
   ggsave(path, plot, width = 6, height = height, dpi = 300, bg = background)
@@ -124,10 +103,7 @@ specify_plot <- function(logotype, logomark, colour, background, x_lim, y_lim) {
     NULL
 }
 
-logo_horizontal <- function(colour = "black", background = "white", 
-                          format = "png", formal = TRUE) {
-  
-  ver <- logo_version(colour, background, enforce = formal)
+specify_logo_horizontal <- function(colour = "black", background = "white") {
   
   # load fonts
   font_add_google("Roboto")
@@ -148,24 +124,13 @@ logo_horizontal <- function(colour = "black", background = "white",
   pic <- specify_plot(arrow_text, triple_chevron, colour, 
                       background, x_limit, y_limit)
   
-  # export image
-  if(!is.null(format)) {
-    filename <- paste0("arrow-logo_horizontal_", ver, ".", format)
-    filepath <- here::here("logos", filename)
-    export_logo(pic, filepath)
-  }
-  
   # invisibly return the ggplot object: note that this object won't
   # render the way you want it to unless you export it in the exact 
-  # width, height and dpi settings noted above
+  # width, height and dpi settings per export_logo()
   return(invisible(pic))
 }
 
-
-logo_vertical <- function(colour = "black", background = "white", 
-                          format = "png", formal = TRUE) {
-  
-  ver <- logo_version(colour, background, enforce = formal)
+specify_logo_vertical <- function(colour = "black", background = "white") {
   
   # load fonts
   font_add_google("Roboto")
@@ -197,13 +162,6 @@ logo_vertical <- function(colour = "black", background = "white",
   pic <- specify_plot(arrow_text, triple_chevron, colour, 
                       background, x_limit, y_limit)
   
-  # export image
-  if(!is.null(format)) {
-    filename <- paste0("arrow-logo_vertical_", ver, ".", format)
-    filepath <- here::here("logos", filename)
-    export_logo(pic, filepath)
-  }
-  
   # invisibly return the ggplot object: note that this object won't
   # render the way you want it to unless you export it in the exact 
   # width, height and dpi settings noted above
@@ -211,8 +169,7 @@ logo_vertical <- function(colour = "black", background = "white",
 }
 
 
-hex_sticker <- function(colour = "black", background = "white", 
-                        format = "png", formal = TRUE) {
+specify_hex <- function(colour = "black", background = "white") {
   
   # load fonts
   font_add_google("Roboto")
@@ -246,7 +203,7 @@ hex_sticker <- function(colour = "black", background = "white",
 
   # invisibly return the ggplot object: note that this object won't
   # render the way you want it to unless you export it in the exact 
-  # width, height and dpi settings noted above
+  # width, height and dpi settings per export_hex()
   return(invisible(pic))
 }
 

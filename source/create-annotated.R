@@ -72,11 +72,9 @@ annotate_spacing <- function(pic, x_breaks, y_breaks, x_lim, y_lim) {
 
 create_annotated_logo_horizontal <- function(dir) {
 
-  pic <- logo_horizontal(
+  pic <- specify_logo_horizontal(
     colour = "#00000088", 
-    background = "white", 
-    formal = FALSE,
-    format = NULL
+    background = "white"
   )
   
   x_lim <- c(-2.075, 1.675)
@@ -94,11 +92,9 @@ create_annotated_logo_horizontal <- function(dir) {
 
 create_annotated_logo_vertical <- function(dir) {
   
-  pic <- logo_vertical(
+  pic <- specify_logo_vertical(
     colour = "#00000088", 
-    background = "white", 
-    formal = FALSE,
-    format = NULL
+    background = "white"
   )
   
   x_lim <- c(-1.45, 2.3)
@@ -117,11 +113,9 @@ create_annotated_logo_vertical <- function(dir) {
 
 create_annotated_hex <- function(dir) {
   
-  pic <- hex_sticker(
+  pic <- specify_hex(
     colour = "#00000088", 
-    background = "white", 
-    formal = FALSE,
-    format = NULL
+    background = "white"
   )
   
   x_breaks <- c(-.3, 0, 1.2, 1.3)
