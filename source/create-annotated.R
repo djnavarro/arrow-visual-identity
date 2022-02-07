@@ -118,7 +118,7 @@ create_annotated_hex <- function(dir) {
     background = "white"
   )
   
-  x_breaks <- c(-.3, 0, 1.2, 1.3)
+  x_breaks <- c(-.3, -.01, .33, .5, 1.1875, 1.3)
   y_breaks <- c(-.4, .1, .6, .73, 1.06, 1.14, 1.26)
   
   x_lim <- c(-1.375, 2.375)
@@ -144,7 +144,42 @@ create_annotated_hex <- function(dir) {
           breaks = y_breaks, 
           limits = y_lim,
           expand = c(0, 0)
-        )
+        ) + 
+        annotate(
+          geom = "text", 
+          label = as.character(c(.1, .6, .73, 1.06, 1.14) * 100), 
+          x = -.43, 
+          y = c(.1, .6, .73, 1.06, 1.14),
+          size = 6, 
+          fontface = "bold"
+        ) +
+        annotate(
+          geom = "text", 
+          label = as.character(c(-.4, .6, 1.14, 1.26) * 100), 
+          x = .95, 
+          y = c(-.4, .6, 1.14, 1.26),
+          size = 6, 
+          fontface = "bold"
+        ) +
+        annotate(
+          geom = "text", 
+          label = as.character(c(-.01, .33, .5) * 100), 
+          x = c(-.01, .33, .5), 
+          y = 1.38,
+          size = 6, 
+          angle = 90,
+          fontface = "bold"
+        ) +
+        annotate(
+          geom = "text", 
+          label = as.character(round(c(-.3, 1.1875, 1.3) * 100)), 
+          x = c(-.3, 1.1875, 1.3), 
+          y = .5,
+          size = 6, 
+          angle = 90,
+          fontface = "bold"
+        ) +
+        NULL
   )
   
   export_hex(

@@ -188,7 +188,7 @@ specify_hex <- function(colour = "black", background = "white") {
     )
   triple_chevron <- triple_chevron %>% 
     mutate(
-      x = x + 0,
+      x = x - .0125,
       y = y - .4
     )
   
