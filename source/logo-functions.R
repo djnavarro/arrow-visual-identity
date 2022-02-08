@@ -6,7 +6,7 @@ library(tidyr)
 library(tibble)
 library(showtext)
 library(magick)
-library(hexify)
+library(hexify) # remotes::install_github("djnavarro/hexify")
 
 
 export_logo <- function(plot, path, height = 6, background = NULL) {
