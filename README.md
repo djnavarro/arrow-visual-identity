@@ -61,7 +61,7 @@ Similarly, two official variations of the hex sticker are provided:
 
 Usage guidelines for official logos are quite similar across many brands, and (with some important exceptions to be discussed below!) the typical rules apply for the Apache Arrow logo
 
- - Please do not visually distort the logos: don't stretch or crop the images.
+ - Please don't visually distort the logos
  - Please reproduce at a clearly visible resolution 
  - Please don't modify the text or the design of the chevrons
  - Please don't add additional text to the logotype or imagery to the chevrons
