@@ -23,4 +23,4 @@ When horizontal space is at a premium, the vertical layout may be a better idea.
 
 The layout of the hex sticker is almost identical to the vertical layout. There is a slight offset between the "Apache Arrow" logotype and the "chevron" logomark, in order to better accomodate the space constraints imposed by hexagonal canvas:
 
-<p align="center"><img src="annotated/hex-sticker-spacing.png" width="60%"></p>
+<p align="center"><img src="annotated/hex-sticker-spacing.png" width="50%"></p>
