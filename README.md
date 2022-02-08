@@ -29,6 +29,6 @@ In addition to the partial (logomark-only and logotype-only) layouts, there may 
 
 <p align="center"><img src="annotated/vertical-logo-spacing.png" width="80%"></p>
 
-A special case of the vertical layout is the "hex sticker" layout which is essentially equivalent, but arranged to fall within a hexagonal frame and to have some alignment with the native symmetries of the hexagon:
+A good example of when the vertical layout is more appropriate is in the context of hex stickers. The standard version of the hex sticker arranges the vertical within a hexagonal frame so that it has some alignment with the native symmetries of the hexagon shape:
 
 <p align="center"><img src="annotated/hex-sticker-spacing.png" width="50%"></p>
