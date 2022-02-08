@@ -19,8 +19,6 @@ The horizontal midline of the word "Arrow" is aligned with horizontal midline of
 
 <p align="center"><img src="annotated/horizontal-logo-spacing.png" width="80%"><p>
 
-## Layout variations
-
 The horizontal layout above is the preferred variant of the Apache Arrow logo, but there will be cases where the full logo doesn't fit. There will be situations where using the "Apache Arrow" logotype alone or the "Triple Chevron" logomark alone is the most appropriate thing to do: the expectation is that people use their best judgment.
 
 In addition to the partial (logomark-only and logotype-only) layouts, there may be cases where a vertical layout work best. The vertically oriented logo attempts to preserve the same look and feel as the horizontal version, and preserves some points of horizontal alignment between components of the logotype and logomarks:
@@ -32,7 +30,7 @@ A good example of when the vertical layout is more appropriate is in the context
 <p align="center"><img src="annotated/hex-sticker-spacing.png" width="50%"></p>
 
 
-## Light and dark variants
+## Variations
 
 The light theme and dark theme versions of the Apache Arrow logo are simple inversions of one another. The light theme uses black text against a white (or other light coloured) background:
 
@@ -42,4 +40,19 @@ Similarly, the dark theme uses white text against a black (or other dark coloure
 
 <p align="center"><img src="logos-horizontal/arrow-logo_horizontal_white-txt_black-bg.png" width="80%"><p>
 
-The image files in this repository include both variants, and include versions with transparent backgrounds as well as opaque backgrounds. Horizontal and vertical versions of all variants are included.
+The image files in this repository include both variants, and include versions with transparent backgrounds as well as opaque backgrounds. Horizontal and vertical versions of all variants are included:
+
+<p align="center">
+<img src="logos-vertical/arrow-logo_vertical_black-txt_white-bg.png" width="40%">
+<img src="logos-vertical/arrow-logo_vertical_white-txt_black-bg.png" width="40%">
+<p>
+
+Similarly, two variations of the hex sticker are provided:
+
+<p align="center">
+<img src="hexes/arrow-logo_hex_black-txt_white-bg.png" width="40%">
+<img src="hexes/arrow-logo_hex_white-txt_black-bg.png" width="40%">
+<p>
+
+
+
