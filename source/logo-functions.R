@@ -170,12 +170,9 @@ specify_logo_vertical <- function(colour = "black", background = "white") {
   return(invisible(pic))
 }
 
+
+
 specify_logo_chevrons <- function(colour = "black", background = "white") {
-  
-  # load fonts
-  font_add_google("Roboto")
-  font_add_google("Barlow")
-  showtext_auto()
   
   # create the chevrons
   triple_chevron <- generate_logomark() 
@@ -190,6 +187,51 @@ specify_logo_chevrons <- function(colour = "black", background = "white") {
       mapping = aes(x, y, group = id),
       fill = colour,
       colour = colour,
+    ) +
+    coord_equal() +
+    scale_size_identity() +
+    theme_void() +
+    theme(panel.background = element_rect(
+      fill = background, colour = background
+    )) + 
+    scale_x_continuous(limits = x_limit, expand = c(0, 0)) +
+    scale_y_continuous(limits = y_limit, expand = c(0, 0)) +
+    NULL
+  
+  # invisibly return the ggplot object: note that this object won't
+  # render the way you want it to unless you export it in the exact 
+  # width, height and dpi settings per export_logo()
+  return(invisible(pic))
+}
+
+
+specify_logo_text <- function(colour = "black", background = "white") {
+  
+  # load fonts
+  font_add_google("Roboto")
+  font_add_google("Barlow")
+  showtext_auto()
+  
+  # create the chevrons
+  arrow_text <- generate_logotype()
+  
+  # specify plot limits
+  x_limit <- c(-2.675, 1.075) # arrow text x range: -1.6, 0
+  y_limit <- c(-.17, 1.36)     # arrow text y range: .33, .86
+  
+  pic <- ggplot() +
+    geom_text(
+      data = arrow_text,
+      mapping = aes(
+        x, y,
+        label = text,
+        family = font,
+        size = size,
+        fontface = weight,
+        hjust = hjust,
+        vjust = vjust
+      ),
+      colour = colour
     ) +
     coord_equal() +
     scale_size_identity() +

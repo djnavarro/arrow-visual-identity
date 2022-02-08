@@ -30,6 +30,15 @@ create_logo_vertical(dir = output_dir, colour = "white", background = "black")
 create_logo_vertical(dir = output_dir, colour = "black", background = NULL)
 create_logo_vertical(dir = output_dir, colour = "white", background = NULL)
 
+# text only logos ---------------------------------------------------------
+
+cat("creating text only logos...\n")
+output_dir <- here::here("logos-text")
+create_logo_text(dir = output_dir, colour = "black", background = "white")
+create_logo_text(dir = output_dir, colour = "white", background = "black")
+create_logo_text(dir = output_dir, colour = "black", background = NULL)
+create_logo_text(dir = output_dir, colour = "white", background = NULL)
+
 # chevron only logos ------------------------------------------------------
 
 cat("creating chevron only logos...\n")

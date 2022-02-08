@@ -41,9 +41,21 @@ create_logo_chevrons <- function(dir, colour, background, format = "png") {
     plot = pic,
     path = file.path(dir, fname), 
     background = background,
-    height = 5.25
+    height = 5.25 # computed from aspect ratio of ggplot limits
   )
 }
+
+create_logo_text <- function(dir, colour, background, format = "png") {
+  pic <- specify_logo_text(colour, background)
+  fname <- logo_filename("text", colour, background, format)
+  export_logo(
+    plot = pic,
+    path = file.path(dir, fname), 
+    background = background,
+    height = 2.54 # computed from aspect ratio of ggplot limits
+  )
+}
+
 
 create_hex <- function(dir, colour, background, border, format = "png") {
   pic <- specify_hex(colour, background)
