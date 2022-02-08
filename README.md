@@ -30,7 +30,7 @@ A good example of when the vertical layout is more appropriate is in the context
 <p align="center"><img src="annotated/hex-sticker-spacing.png" width="50%"></p>
 
 
-## Variations
+## Official variations
 
 The light theme and dark theme versions of the Apache Arrow logo are simple inversions of one another. The light theme uses black text against a white (or other light coloured) background:
 
@@ -44,13 +44,15 @@ The image files in this repository include both variants, and include versions w
 
 <p align="center">
 <img src="logos-vertical/arrow-logo_vertical_black-txt_white-bg.png" width="40%">
+&nbsp;&nbsp;
 <img src="logos-vertical/arrow-logo_vertical_white-txt_black-bg.png" width="40%">
 <p>
 
-Similarly, two variations of the hex sticker are provided:
+Similarly, two official variations of the hex sticker are provided:
 
 <p align="center">
 <img src="hexes/arrow-logo_hex_black-txt_white-bg.png" width="40%">
+&nbsp;&nbsp;
 <img src="hexes/arrow-logo_hex_white-txt_black-bg.png" width="40%">
 <p>
 
