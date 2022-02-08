@@ -15,13 +15,12 @@ The annotated image below shows the precise spacing used in the horizontal versi
 
 The horizontal midline of the word "Arrow" is aligned with horizontal midline of the chevrons, and the height of the word "Arrow" is approximately 1/3 the total height of the chevrons. Similarly the midline of the word "Apache" is aligned with the upper-inner vertex of the chevrons. The logotype and logomark are placed flush against one another, with the rightmost tip of the "W" in "Arrow" vertically aligned with the leftmost edge of the chevrons.
 
-<img src="annotated/horizontal-logo-spacing.png" width="80%" align="center">
-
+<p align="center"><img src="annotated/horizontal-logo-spacing.png" width="80%"><p>
 
 When horizontal space is at a premium, the vertical layout may be a better idea. As much as possible, the vertical variant attempts to preserve the same look and feel as the horizontal version, and keeps as many of the same spatial alignments (e.g., the tip of the W aligns with the chevrons in both version)
 
-<img src="annotated/vertical-logo-spacing.png" width="80%" align="center">
+<p align="center"><img src="annotated/vertical-logo-spacing.png" width="80%"></p>
 
 The layout of the hex sticker is almost identical to the vertical layout. There is a slight offset between the "Apache Arrow" logotype and the "chevron" logomark, in order to better accomodate the space constraints imposed by hexagonal canvas:
 
-<img src="annotated/hex-sticker-spacing.png" width="60%" align="center">
+<p align="center"><img src="annotated/hex-sticker-spacing.png" width="60%"></p>
