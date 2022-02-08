@@ -59,7 +59,7 @@ Similarly, two official variations of the hex sticker are provided:
 
 ## Official usage guidelines
 
-Usage guidelines for official logos are quite similar across many brands, and (with some important exceptions to be discussed below!) the typical rules apply for the Apache Arrow logo
+Usage guidelines for official logos are quite similar across many brands, and the typical rules apply for the Apache Arrow logo
 
  - Please don't visually distort the logos
  - Please reproduce at a clearly visible resolution 
@@ -69,8 +69,9 @@ Usage guidelines for official logos are quite similar across many brands, and (w
 In general, the principles laid out in [Apache Foundation Style Guide](https://apache.org/foundation/press/kit/ApacheFoundation_StyleGuide.pdf) for usage of the Apache logo are also appropriate for the Apache Arrow logo
 
 
-## Community creativity and unofficial images
+## Creating unofficial images
 
 Okay that was the boring part, and we had to include it because Apache Arrow is a large project and it genuinely does need to have some meaningful visual identity. If you're in a situation where you want to refer formally to the Apache Arrow project you should adhere to those guidelines pretty closely. 
 
-That said, not everything in life is official, and the purpose of the visual identity guidelines is not to prevent folks in the Apache Arrow community from having fun making and using unofficial images when appropriate. 
+That said, not everything in life is official. The purpose of the visual identity guidelines is to provide guidance on what to do when you *do* need to refer to Apache Arrow in an official or formal way. It's not meant to prevent people from having fun creating unofficial images when appropriate! 
+
