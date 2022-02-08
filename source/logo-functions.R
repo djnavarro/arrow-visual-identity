@@ -149,7 +149,7 @@ specify_logo_vertical <- function(colour = "black", background = "white") {
     )
   triple_chevron <- triple_chevron %>% 
     mutate(
-      x = x + 0,
+      x = x - .115,
       y = y - .4
     )
 

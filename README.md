@@ -21,10 +21,10 @@ The horizontal midline of the word "Arrow" is aligned with horizontal midline of
 
 The horizontal layout above is the preferred variant of the Apache Arrow logo, but there will be cases where the full logo doesn't fit. There will be situations where using the "Apache Arrow" logotype alone or the "Triple Chevron" logomark alone is the most appropriate thing to do: the expectation is that people use their best judgment.
 
-In addition to the partial (logomark-only and logotype-only) layouts, there may be cases where a vertical layout work best. The vertically oriented logo attempts to preserve the same look and feel as the horizontal version, and keeps as many of the same spatial alignments:
+In addition to the partial (logomark-only and logotype-only) layouts, there may be cases where a vertical layout work best. The vertically oriented logo attempts to preserve the same look and feel as the horizontal version, and preserves some points of horizontal alignment between components of the logotype and logomarks:
 
 <p align="center"><img src="annotated/vertical-logo-spacing.png" width="80%"></p>
 
-A special case of the vertical layout is the "hex sticker" layout which is almost identical but includes a slight offset between the "Apache Arrow" logotype and the "chevron" logomark, in order to better accomodate the space constraints imposed by hexagonal canvas:
+A special case of the vertical layout is the "hex sticker" layout which is almost identical but contains some very minor tweaks to better fit within the constraints of the hexagonal frame:
 
 <p align="center"><img src="annotated/hex-sticker-spacing.png" width="50%"></p>

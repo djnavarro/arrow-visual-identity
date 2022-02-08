@@ -102,7 +102,7 @@ create_annotated_logo_vertical <- function(dir) {
   y_lim <- c(-.8, 1.6)
   ar <- (y_lim[2] - y_lim[1]) / (x_lim[2] - x_lim[1])
   
-  x_breaks <- c(-.4, 0, .23, 1.2)
+  x_breaks <- c(-.4, -.11, .23, 1.09, 1.2)
   y_breaks <- c(-.4, .1, .6, .73, 1.06, 1.14, 1.26)
   
   pic %>% 
