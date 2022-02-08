@@ -13,13 +13,14 @@ logo_filename <- function(type, colour, background, format) {
   )
 }
 
-create_logo_horizontal <- function(dir, colour, background, format = "png") {
-  pic <- specify_logo_horizontal(colour, background)
+create_logo_horizontal <- function(dir, colour, background, format = "png", crop = TRUE) {
+  pic <- specify_logo_horizontal(colour, background, crop = crop)
   fname <- logo_filename("horizontal", colour, background, format)
   export_logo(
     plot = pic,
     path = file.path(dir, fname), 
-    background = background
+    background = background, 
+    height = ifelse(crop, 3.12, 6) 
   )
 }
 

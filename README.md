@@ -1,7 +1,11 @@
 
+<p align="center"><img src="logos-horizontal/arrow-lgo_horizontal-black-txt_white-bg.png" width="80%"><p>
+
 # Visual identity for Apache Arrow
 
 > WARNING: THIS IS A DRAFT PROPOSAL ONLY. DO NOT CITE OR RELY ON THIS VERSION
+
+
 
 As a community project, the visual identity guidelines for Apache Arrow attempt to balance the need to maintain consistent visual imagery in "formal" contexts, while allowing flexibility for fun and creative reuse of the Apache Arrow visual identity in "informal" contexts! 
 

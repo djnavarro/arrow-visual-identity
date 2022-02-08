@@ -12,16 +12,14 @@ create_annotated_hex(output_dir)
 create_annotated_logo_horizontal(output_dir)
 create_annotated_logo_vertical(output_dir)
 
-
-# horizontal logos --------------------------------------------------------
+# cropped horizontal logos ------------------------------------------------
 
 cat("creating horizontal logos...\n")
 output_dir <- here::here("logos-horizontal")
-create_logo_horizontal(dir = output_dir, colour = "black", background = "white")
-create_logo_horizontal(dir = output_dir, colour = "white", background = "black")
-create_logo_horizontal(dir = output_dir, colour = "black", background = NULL)
-create_logo_horizontal(dir = output_dir, colour = "white", background = NULL)
-
+create_logo_horizontal(dir = output_dir, colour = "black", background = "white", crop = TRUE)
+create_logo_horizontal(dir = output_dir, colour = "white", background = "black", crop = TRUE)
+create_logo_horizontal(dir = output_dir, colour = "black", background = NULL, crop = TRUE)
+create_logo_horizontal(dir = output_dir, colour = "white", background = NULL, crop = TRUE)
 
 # vertical logos ----------------------------------------------------------
 
@@ -31,7 +29,6 @@ create_logo_vertical(dir = output_dir, colour = "black", background = "white")
 create_logo_vertical(dir = output_dir, colour = "white", background = "black")
 create_logo_vertical(dir = output_dir, colour = "black", background = NULL)
 create_logo_vertical(dir = output_dir, colour = "white", background = NULL)
-
 
 # hex stickers ------------------------------------------------------------
 

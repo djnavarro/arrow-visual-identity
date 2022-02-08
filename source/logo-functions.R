@@ -102,7 +102,7 @@ specify_plot <- function(logotype, logomark, colour, background, x_lim, y_lim) {
     NULL
 }
 
-specify_logo_horizontal <- function(colour = "black", background = "white") {
+specify_logo_horizontal <- function(colour = "black", background = "white", crop = FALSE) {
   
   # load fonts
   font_add_google("Roboto")
@@ -114,8 +114,11 @@ specify_logo_horizontal <- function(colour = "black", background = "white") {
   triple_chevron <- generate_logomark()
   
   # specify plot limits
-  x_limit <- c(-1.8, 1.95)
-  y_limit <- c(-1.375, 2.375)
+  x_limit <- c(-2.075, 1.675) # logo x range: -1.6, 1.2
+  y_limit <- c(-1.375, 2.375) # logo y range: 0, 1
+  if(crop) {
+    y_limit <- c(-.475, 1.475)
+  }
   
   # construct plot: the logomark and logotype positions
   # are already in correct relation to each other for 
