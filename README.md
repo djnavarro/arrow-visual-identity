@@ -5,9 +5,7 @@
 
 > WARNING: THIS IS A DRAFT PROPOSAL ONLY. DO NOT CITE OR RELY ON THIS VERSION
 
-
-
-As a community project, the visual identity guidelines for Apache Arrow attempt to balance the need to maintain consistent visual imagery in "formal" contexts, while allowing flexibility for fun and creative reuse of the Apache Arrow visual identity in "informal" contexts! 
+As a community project, the visual identity guidelines for Apache Arrow attempt to balance the need to maintain consistent visual imagery in formal contexts, while allowing flexibility for fun and creative reuse of the Apache Arrow visual identity informal contexts! 
 
 ## Structure of the logo
 
@@ -32,3 +30,16 @@ In addition to the partial (logomark-only and logotype-only) layouts, there may 
 A good example of when the vertical layout is more appropriate is in the context of hex stickers. The standard version of the hex sticker arranges the vertical within a hexagonal frame so that it has some alignment with the native symmetries of the hexagon shape:
 
 <p align="center"><img src="annotated/hex-sticker-spacing.png" width="50%"></p>
+
+
+## Light and dark variants
+
+The light theme and dark theme versions of the Apache Arrow logo are simple inversions of one another. The light theme uses black text against a white (or other light coloured) background:
+
+<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"><p>
+
+Similarly, the dark theme uses white text against a black (or other dark coloured) background:
+
+<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_white-txt_black-bg.png" width="80%"><p>
+
+The image files in this repository include both variants, and include versions with transparent backgrounds as well as opaque backgrounds. Horizontal and vertical versions of all variants are included.
