@@ -1,5 +1,5 @@
 
-<p align="center"><img src="logos-horizontal/arrow-lgo_horizontal-black-txt_white-bg.png" width="80%"><p>
+<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"><p>
 
 # Visual identity for Apache Arrow
 
