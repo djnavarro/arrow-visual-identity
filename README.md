@@ -1,5 +1,5 @@
 
-<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"><p>
+<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"></p>
 
 # Visual identity for Apache Arrow
 
@@ -17,7 +17,7 @@ The annotated image below shows the precise spacing used in the horizontal versi
 
 The horizontal midline of the word "Arrow" is aligned with horizontal midline of the chevrons, and the height of the word "Arrow" is approximately 1/3 the total height of the chevrons. Similarly the midline of the word "Apache" is aligned with the upper-inner vertex of the chevrons. The logotype and logomark are placed flush against one another, with the rightmost tip of the "W" in "Arrow" vertically aligned with the leftmost edge of the chevrons.
 
-<p align="center"><img src="annotated/horizontal-logo-spacing.png" width="80%"><p>
+<p align="center"><img src="annotated/horizontal-logo-spacing.png" width="80%"></p>
 
 The horizontal layout above is the preferred variant of the Apache Arrow logo, but there will be cases where the full logo doesn't fit. There will be situations where using the "Apache Arrow" logotype alone or the "Triple Chevron" logomark alone is the most appropriate thing to do: the expectation is that people use their best judgment.
 
@@ -34,11 +34,11 @@ A good example of when the vertical layout is more appropriate is in the context
 
 The light theme and dark theme versions of the Apache Arrow logo are simple inversions of one another. The light theme uses black text against a white (or other light coloured) background:
 
-<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"><p>
+<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"></p>
 
 Similarly, the dark theme uses white text against a black (or other dark coloured) background:
 
-<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_white-txt_black-bg.png" width="80%"><p>
+<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_white-txt_black-bg.png" width="80%"></p>
 
 The image files in this repository include both variants, and include versions with transparent backgrounds as well as opaque backgrounds. Horizontal and vertical versions of all variants are included:
 
@@ -46,7 +46,7 @@ The image files in this repository include both variants, and include versions w
 <img src="logos-vertical/arrow-logo_vertical_black-txt_white-bg.png" width="40%">
 &nbsp;&nbsp;
 <img src="logos-vertical/arrow-logo_vertical_white-txt_black-bg.png" width="40%">
-<p>
+</p>
 
 Similarly, two official variations of the hex sticker are provided:
 
@@ -54,7 +54,25 @@ Similarly, two official variations of the hex sticker are provided:
 <img src="hexes/arrow-logo_hex_black-txt_white-bg.png" width="40%">
 &nbsp;&nbsp;
 <img src="hexes/arrow-logo_hex_white-txt_black-bg.png" width="40%">
-<p>
+</p>
+
+The repository also includes separate files for "Triple Chevron" logomark without any accompanying text:
+
+<p align="center">
+<img src="logos-chevrons/arrow-logo_chevrons_black-txt_white-bg.png" width="40%">
+&nbsp;&nbsp;
+<img src="logos-chevrons/arrow-logo_chevrons_white-txt_black-bg.png" width="40%">
+</p>
+
+There are also files for the "Apache Arrow" logotype without the logomark:
+
+<p align="center">
+<img src="logos-text/arrow-logo_text_black-txt_white-bg.png" width="40%">
+&nbsp;&nbsp;
+<img src="logos-text/arrow-logo_text_white-txt_black-bg.png" width="40%">
+</p>
+
+
 
 
 ## Official usage guidelines
