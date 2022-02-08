@@ -170,6 +170,43 @@ specify_logo_vertical <- function(colour = "black", background = "white") {
   return(invisible(pic))
 }
 
+specify_logo_chevrons <- function(colour = "black", background = "white") {
+  
+  # load fonts
+  font_add_google("Roboto")
+  font_add_google("Barlow")
+  showtext_auto()
+  
+  # create the chevrons
+  triple_chevron <- generate_logomark() 
+  
+  # specify plot limits
+  x_limit <- c(-.2, 1.4) # chevrons x range: 0, 1.2
+  y_limit <- c(-.2, 1.2) # chevrons y range: 0, 1
+  
+  pic <- ggplot() +
+    geom_polygon(
+      data = triple_chevron,
+      mapping = aes(x, y, group = id),
+      fill = colour,
+      colour = colour,
+    ) +
+    coord_equal() +
+    scale_size_identity() +
+    theme_void() +
+    theme(panel.background = element_rect(
+      fill = background, colour = background
+    )) + 
+    scale_x_continuous(limits = x_limit, expand = c(0, 0)) +
+    scale_y_continuous(limits = y_limit, expand = c(0, 0)) +
+    NULL
+  
+  # invisibly return the ggplot object: note that this object won't
+  # render the way you want it to unless you export it in the exact 
+  # width, height and dpi settings per export_logo()
+  return(invisible(pic))
+}
+
 
 specify_hex <- function(colour = "black", background = "white") {
   

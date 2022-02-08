@@ -34,6 +34,17 @@ create_logo_vertical <- function(dir, colour, background, format = "png") {
   )
 }
 
+create_logo_chevrons <- function(dir, colour, background, format = "png") {
+  pic <- specify_logo_chevrons(colour, background)
+  fname <- logo_filename("chevrons", colour, background, format)
+  export_logo(
+    plot = pic,
+    path = file.path(dir, fname), 
+    background = background,
+    height = 5.25
+  )
+}
+
 create_hex <- function(dir, colour, background, border, format = "png") {
   pic <- specify_hex(colour, background)
   fname <- logo_filename("hex", colour, background, format)

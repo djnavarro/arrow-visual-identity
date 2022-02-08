@@ -30,6 +30,15 @@ create_logo_vertical(dir = output_dir, colour = "white", background = "black")
 create_logo_vertical(dir = output_dir, colour = "black", background = NULL)
 create_logo_vertical(dir = output_dir, colour = "white", background = NULL)
 
+# chevron only logos ------------------------------------------------------
+
+cat("creating chevron only logos...\n")
+output_dir <- here::here("logos-chevrons")
+create_logo_chevrons(dir = output_dir, colour = "black", background = "white")
+create_logo_chevrons(dir = output_dir, colour = "white", background = "black")
+create_logo_chevrons(dir = output_dir, colour = "black", background = NULL)
+create_logo_chevrons(dir = output_dir, colour = "white", background = NULL)
+
 # hex stickers ------------------------------------------------------------
 
 cat("creating hex stickers...\n")
