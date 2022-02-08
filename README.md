@@ -40,7 +40,9 @@ Similarly, the dark theme uses white text against a black (or other dark coloure
 
 <p align="center"><img src="logos-horizontal/arrow-logo_horizontal_white-txt_black-bg.png" width="80%"></p>
 
-The image files in this repository include both variants, and include versions with transparent backgrounds as well as opaque backgrounds. Horizontal and vertical versions of all variants are included:
+The image files in this repository include both variants, and include versions with transparent backgrounds as well as opaque backgrounds. It is entirely acceptable to use the transparent background variants against backgrounds that aren't precisely white or black (what would be the point otherwise?) --- in fact this usage is illustrated on the official [Apache Arrow website](https://arrow.apache.org/) which employs the transparent version of the logo to place  white text over a grey background!
+
+Horizontal and vertical versions of all variants are included:
 
 <p align="center">
 <img src="logos-vertical/arrow-logo_vertical_black-txt_white-bg.png" width="40%">
