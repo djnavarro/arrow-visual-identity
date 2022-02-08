@@ -2,7 +2,8 @@
 source(here::here("source", "logo-functions.R"))
 source(here::here("source", "create-annotated.R"))
 source(here::here("source", "create-logos.R"))
-
+source(here::here("source", "create-offbrand-hex-1.R"))
+source(here::here("source", "create-offbrand-hex-2.R"))
 
 # annotated images --------------------------------------------------------
 
@@ -54,4 +55,9 @@ cat("creating hex stickers...\n")
 output_dir <- here::here("hexes")
 create_hex(dir = output_dir, colour = "black", background = "white", border = "black")
 create_hex(dir = output_dir, colour = "white", background = "black", border = "#222222")
+
+cat("creating offbrand hex stickers...\n")
+create_offbrand_hex_1(here::here("hexes", "offbrand_hex_1.png"))
+create_offbrand_hex_2(here::here("hexes", "offbrand_hex_2.png"))
+
 

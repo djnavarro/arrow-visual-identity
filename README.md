@@ -95,3 +95,13 @@ Okay that was the boring part, and we had to include it because Apache Arrow is 
 
 That said, not everything in life is official. The purpose of the visual identity guidelines is to provide guidance on what to do when you *do* need to refer to Apache Arrow in an official or formal way. It's not meant to prevent people from having fun creating unofficial images when appropriate! 
 
+Two fun examples that arose during the process of writing this document: on the left, a hypothetical hex sticker for an R-Ladies Arrow event; on the right, something that adds a splash of orange to the dark hex sticker
+
+<p align="center">
+<img src="hexes/offbrand_hex_1.png" width="40%">
+&nbsp;&nbsp;
+<img src="hexes/offbrand_hex_2.png" width="40%">
+</p>
+
+Neither one is an official part of the Apache Arrow visual identity but totally fine for many everyday situations!
+
