@@ -3,14 +3,9 @@
 
 # Visual Identity for Apache Arrow
 
-As a community project, the visual identity guidelines for Apache Arrow attempt to balance the need to maintain consistent visual imagery in formal contexts, while allowing flexibility for fun and creative reuse of the Apache Arrow logo in informal contexts. On this page you can find:
+As a community project, the visual identity guidelines for Apache Arrow attempt to balance the need to maintain consistent visual imagery in formal contexts, while allowing flexibility for fun and creative reuse of the Apache Arrow logo in informal contexts. 
 
-- [Design of the logo](#design)
-- [Variations of the logo](#variations)
-- [Usage guidelines](#using-the-logo)
-- [List of logo files](#files)
-
-## Design of the logo {#design}
+## Design of the logo
 
 The Apache Arrow logo consists of the "Apache Arrow" logotype and the "Triple Chevron" logomark, arranged horizontally with the text placed to the left of the image. The standard "light theme" version of the logo uses black text and image against a white background, and the standard "dark theme" version of the logo is white against a black background. The light version looks like this:
 
@@ -35,7 +30,7 @@ A good example of when the vertical layout is more appropriate is in the context
 <p align="center"><img src="img/logo-spacing-hex.png" width="50%"></p>
 
 
-## Variations of the logo {#variations}
+## Variations of the logo
 
 At the bottom of this page you can find the complete list of all logo-related files provided by the Apache Arrow project. The logo exists in a light theme and a dark theme, and these versions are usually simple inversions of one another. The light theme uses black text against a white (or other light colored) background:
 
@@ -80,7 +75,7 @@ and the "Apache Arrow" logotype on its own:
 </p>
 
 
-## Using the Apache Arrow logos {#using-the-logo}
+## Using the Apache Arrow logos 
 
 ### General guidelines
 
@@ -112,7 +107,7 @@ The image on the right adds extra orange colored chevrons to the dark themed hex
 Many other context-appropriate informal variations can be imagined. For example, if Apache Arrow were being used to power a generative art system, the background fill to the logo might not be a solid color, it could be the art itself. Again, the overriding principle is that the visual integrity of the Apache Arrow logo remains intact and the modifications are appropriate to the context in which it is used.
 
 
-## List of provided logo files {#files}
+## List of provided logo files 
 
 To be added on the actual page.
 
