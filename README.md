@@ -1,5 +1,5 @@
 
-<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"></p>
+<p align="center"><img src="img/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"></p>
 
 # Visual identity for Apache Arrow
 
@@ -17,61 +17,61 @@ The annotated image below shows the precise spacing used in the horizontal versi
 
 The horizontal midline of the word "Arrow" is aligned with horizontal midline of the chevrons, and the height of the word "Arrow" is approximately 1/3 the total height of the chevrons. Similarly the midline of the word "Apache" is aligned with the upper-inner vertex of the chevrons. The logotype and logomark are placed flush against one another, with the rightmost tip of the "W" in "Arrow" vertically aligned with the leftmost edge of the chevrons.
 
-<p align="center"><img src="annotated/horizontal-logo-spacing.png" width="80%"></p>
+<p align="center"><img src="img/logo-spacing-horizontal.png" width="80%"></p>
 
 The horizontal layout above is the preferred variant of the Apache Arrow logo, but there will be cases where the full logo doesn't fit. There will be situations where using the "Apache Arrow" logotype alone or the "Triple Chevron" logomark alone is the most appropriate thing to do: the expectation is that people use their best judgment.
 
 In addition to the partial (logomark-only and logotype-only) layouts, there may be cases where a vertical layout work best. The vertically oriented logo attempts to preserve the same look and feel as the horizontal version, and preserves some points of horizontal alignment between components of the logotype and logomarks:
 
-<p align="center"><img src="annotated/vertical-logo-spacing.png" width="80%"></p>
+<p align="center"><img src="img/logo-spacing-vertical.png" width="80%"></p>
 
 A good example of when the vertical layout is more appropriate is in the context of hex stickers. The standard version of the hex sticker arranges the vertical within a hexagonal frame so that it has some alignment with the native symmetries of the hexagon shape:
 
-<p align="center"><img src="annotated/hex-sticker-spacing.png" width="50%"></p>
+<p align="center"><img src="img/logo-spacing-hex.png" width="50%"></p>
 
 
 ## Official variations
 
 The light theme and dark theme versions of the Apache Arrow logo are simple inversions of one another. The light theme uses black text against a white (or other light coloured) background:
 
-<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"></p>
+<p align="center"><img src="img/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"></p>
 
 Similarly, the dark theme uses white text against a black (or other dark coloured) background:
 
-<p align="center"><img src="logos-horizontal/arrow-logo_horizontal_white-txt_black-bg.png" width="80%"></p>
+<p align="center"><img src="img/arrow-logo_horizontal_white-txt_black-bg.png" width="80%"></p>
 
 The image files in this repository include both variants, and include versions with transparent backgrounds as well as opaque backgrounds. It is entirely acceptable to use the transparent background variants against backgrounds that aren't precisely white or black (what would be the point otherwise?) --- in fact this usage is illustrated on the official [Apache Arrow website](https://arrow.apache.org/) which employs the transparent version of the logo to place  white text over a grey background!
 
 Horizontal and vertical versions of all variants are included:
 
 <p align="center">
-<img src="logos-vertical/arrow-logo_vertical_black-txt_white-bg.png" width="40%">
+<img src="img/arrow-logo_vertical_black-txt_white-bg.png" width="40%">
 &nbsp;&nbsp;
-<img src="logos-vertical/arrow-logo_vertical_white-txt_black-bg.png" width="40%">
+<img src="img/arrow-logo_vertical_white-txt_black-bg.png" width="40%">
 </p>
 
 Similarly, two official variations of the hex sticker are provided:
 
 <p align="center">
-<img src="hexes/arrow-logo_hex_black-txt_white-bg.png" width="40%">
+<img src="img/arrow-logo_hex_black-txt_white-bg.png" width="40%">
 &nbsp;&nbsp;
-<img src="hexes/arrow-logo_hex_white-txt_black-bg.png" width="40%">
+<img src="img/arrow-logo_hex_white-txt_black-bg.png" width="40%">
 </p>
 
 The repository also includes separate files for "Triple Chevron" logomark without any accompanying text:
 
 <p align="center">
-<img src="logos-chevrons/arrow-logo_chevrons_black-txt_white-bg.png" width="40%">
+<img src="img/arrow-logo_chevrons_black-txt_white-bg.png" width="40%">
 &nbsp;&nbsp;
-<img src="logos-chevrons/arrow-logo_chevrons_white-txt_black-bg.png" width="40%">
+<img src="img/arrow-logo_chevrons_white-txt_black-bg.png" width="40%">
 </p>
 
 There are also files for the "Apache Arrow" logotype without the logomark:
 
 <p align="center">
-<img src="logos-text/arrow-logo_text_black-txt_white-bg.png" width="40%">
+<img src="img/arrow-logo_text_black-txt_white-bg.png" width="40%">
 &nbsp;&nbsp;
-<img src="logos-text/arrow-logo_text_white-txt_black-bg.png" width="40%">
+<img src="img/arrow-logo_text_white-txt_black-bg.png" width="40%">
 </p>
 
 
@@ -98,9 +98,9 @@ That said, not everything in life is official. The purpose of the visual identit
 To provide useful guidance on when unofficial images are acceptable and unacceptable, here are two examples:
 
 <p align="center">
-<img src="hexes/offbrand_hex_1.png" width="40%">
+<img src="img/offbrand_hex_1.png" width="40%">
 &nbsp;&nbsp;
-<img src="hexes/offbrand_hex_2.png" width="40%">
+<img src="img/offbrand_hex_2.png" width="40%">
 </p>
 
 The image on the left highlights the letter R and one of the chevrons in a fashion that is reminiscent of the R prompt, using colors that align with those used by the R-Ladies organization. Using this image informally as part of a presentation to an R-Ladies meetup would be consistent with the Apache Arrow guidelines, because it is thematically appropriate to the context and the image is not being presented as if it were the official Apache Arrow logo. The purple elements have been introduced to the image in a manner that leaves the visual integrity of the Apache Arrow logo intact, and in a fashion that reflects the informal context-specific use within an R-Ladies meetup.

@@ -86,8 +86,7 @@ create_annotated_logo_horizontal <- function(dir) {
   
   pic %>% 
     annotate_spacing(x_breaks, y_breaks, x_lim, y_lim) %>% 
-    export_logo(file.path(dir, "horizontal-logo-spacing.png"), height = ar * 6)
-  
+    export_logo(file.path(dir, "logo-spacing-horizontal.png"), height = ar * 6)
 }
 
 create_annotated_logo_vertical <- function(dir) {
@@ -107,7 +106,7 @@ create_annotated_logo_vertical <- function(dir) {
   
   pic %>% 
     annotate_spacing(x_breaks, y_breaks, x_lim, y_lim) %>% 
-    export_logo(file.path(dir, "vertical-logo-spacing.png"), height = ar * 6)
+    export_logo(file.path(dir, "logo-spacing-vertical.png"), height = ar * 6)
   
 }
 
@@ -184,7 +183,7 @@ create_annotated_hex <- function(dir) {
   
   export_hex(
     plot = pic, 
-    path = file.path(dir, "hex-sticker-spacing.png"),
+    path = file.path(dir, "logo-spacing-hex.png"),
     border = "black", 
     background = "white", 
     border_opacity = 66
