@@ -93,9 +93,9 @@ In general, the principles laid out in [Apache Foundation Style Guide](https://a
 
 Okay that was the boring part, and we had to include it because Apache Arrow is a large project and it genuinely does need to have some meaningful visual identity. If you're in a situation where you want to refer formally to the Apache Arrow project you should adhere to those guidelines pretty closely. 
 
-That said, not everything in life is official. The purpose of the visual identity guidelines is to provide guidance on what to do when you *do* need to refer to Apache Arrow in an official or formal way. It's not meant to prevent people from having fun creating unofficial images when appropriate! 
+That said, not everything in life is official. The purpose of the visual identity guidelines is to provide guidance on what to do when you *do* need to refer to Apache Arrow in an official or formal way. It's not meant to prevent people from having fun creating unofficial images when appropriate.
 
-Two fun examples that arose during the process of writing this document: on the left, a hypothetical hex sticker for an R-Ladies Arrow event; on the right, something that adds a splash of orange to the dark hex sticker
+To provide useful guidance on when unofficial images are acceptable and unacceptable, here are two examples:
 
 <p align="center">
 <img src="hexes/offbrand_hex_1.png" width="40%">
@@ -103,5 +103,11 @@ Two fun examples that arose during the process of writing this document: on the 
 <img src="hexes/offbrand_hex_2.png" width="40%">
 </p>
 
-Neither one is an official part of the Apache Arrow visual identity but totally fine for many everyday situations!
+The image on the left highlights the letter R and one of the chevrons in a fashion that is reminiscent of the R prompt, using colors that align with those used by the R-Ladies organization. Using this image informally as part of a presentation to an R-Ladies meetup would be consistent with the Apache Arrow guidelines, because it is thematically appropriate to the context and the image is not being presented as if it were the official Apache Arrow logo. The purple elements have been introduced to the image in a manner that leaves the visual integrity of the Apache Arrow logo intact, and in a fashion that reflects the informal context-specific use within an R-Ladies meetup.
+
+The image on the right adds extra orange colored chevrons to the dark themed hex sticker. Again, this is clearly not part of the official Apache Arrow visual identity and should not be presented as such. For this to be appropriate, even informally, the context would need to be one in which the orange elements are meaningfully connected to the surrounding imagery (e.g., perhaps the orange chevrons continue horizontally in either direction) so that the core of the Apache Arrow logo itself remains visually coherent.
+
+Many other context-appropriate informal variations can be imagined. For example, if Apache Arrow were being used to power a generative art system, the background fill to the logo might not be a solid color, it could be the art itself. Again, the overriding principle is that the visual integrity of the Apache Arrow logo remains intact and the modifications are appropriate to the context in which it is used.
+
+
 
