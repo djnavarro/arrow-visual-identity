@@ -1,17 +1,22 @@
 
-<p align="center"><img src="img/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"></p>
-
-# Visual identity for Apache Arrow
-
 > WARNING: THIS IS A DRAFT PROPOSAL ONLY. DO NOT CITE OR RELY ON THIS VERSION
 
-As a community project, the visual identity guidelines for Apache Arrow attempt to balance the need to maintain consistent visual imagery in formal contexts, while allowing flexibility for fun and creative reuse of the Apache Arrow visual identity informal contexts! 
+# Visual Identity for Apache Arrow
 
-## Structure of the logo
+As a community project, the visual identity guidelines for Apache Arrow attempt to balance the need to maintain consistent visual imagery in formal contexts, while allowing flexibility for fun and creative reuse of the Apache Arrow logo in informal contexts. On this page you can find:
 
-The Apache Arrow logo consists of the "Apache Arrow" logotype and the "Triple Chevron" logomark, arranged horizontally with the text placed to the left of the image. The standard "light theme" version of the logo uses black text and image against a white background, and the standard "dark theme" version of the logo is white against a black background.
+- [Design of the logo](#design)
+- [Variations of the logo](#variations)
+- [Usage guidelines](#using-the-logo)
+- [List of logo files](#files)
 
-The word "Apache" in the logotype is written in all caps Roboto font, and the word "Arrow" is written in all caps "Barlow" font in boldface. Both should use normal font kerning. The precise fontsize may depend slightly on the display context but the intent is that the word "Arrow" be approximately 3 times the height, and approximately 2.5 times the width of the word "Apache". The text should be left-justified, with the leftmost edge of the first letters in both words aligned horizontally. Both fonts are freely available: Roboto is licenced under the Apache licence, Barlow under the SIL Open Font Licence, and both are accessible through Google Fonts. 
+## Design of the logo {#design}
+
+The Apache Arrow logo consists of the "Apache Arrow" logotype and the "Triple Chevron" logomark, arranged horizontally with the text placed to the left of the image. The standard "light theme" version of the logo uses black text and image against a white background, and the standard "dark theme" version of the logo is white against a black background. The light version looks like this:
+
+<p align="center"><img src="img/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"></p>
+
+The word "Apache" in the logotype is written in all caps Roboto font, and the word "Arrow" is written in all caps "Barlow" font in boldface. Both should use normal font kerning. The precise font size may depend slightly on the display context but the intent is that the word "Arrow" be approximately 3 times the height, and approximately 2.5 times the width of the word "Apache". The text should be left-justified, with the leftmost edge of the first letters in both words aligned horizontally.
 
 The annotated image below shows the precise spacing used in the horizontal version of the Apache Arrow logo as well as the design of the Triple Chevron. Each chevron has width exactly half its height, and forms a 90-degree angle at the tip. The thickness (both vertically and horizontally) of the chevron is 20% of its height. The spacing between adjacent chevrons is 15% of the height (i.e., if height = 100, width = 50, and spacing = 15). 
 
@@ -30,17 +35,17 @@ A good example of when the vertical layout is more appropriate is in the context
 <p align="center"><img src="img/logo-spacing-hex.png" width="50%"></p>
 
 
-## Official variations
+## Variations of the logo {#variations}
 
-The light theme and dark theme versions of the Apache Arrow logo are simple inversions of one another. The light theme uses black text against a white (or other light coloured) background:
+At the bottom of this page you can find the complete list of all logo-related files provided by the Apache Arrow project. The logo exists in a light theme and a dark theme, and these versions are usually simple inversions of one another. The light theme uses black text against a white (or other light colored) background:
 
 <p align="center"><img src="img/arrow-logo_horizontal_black-txt_white-bg.png" width="80%"></p>
 
-Similarly, the dark theme uses white text against a black (or other dark coloured) background:
+Similarly, the dark theme uses white text against a black (or other dark colored) background:
 
 <p align="center"><img src="img/arrow-logo_horizontal_white-txt_black-bg.png" width="80%"></p>
 
-The image files in this repository include both variants, and include versions with transparent backgrounds as well as opaque backgrounds. It is entirely acceptable to use the transparent background variants against backgrounds that aren't precisely white or black (what would be the point otherwise?) --- in fact this usage is illustrated on the official [Apache Arrow website](https://arrow.apache.org/) which employs the transparent version of the logo to place  white text over a grey background!
+The image files in this repository include both variants, and include versions with transparent backgrounds as well as opaque backgrounds. It is entirely acceptable to use the transparent background variants against backgrounds that aren't precisely white or black, as exemplified by the main page on the Apache Arrow site.
 
 Horizontal and vertical versions of all variants are included:
 
@@ -58,7 +63,7 @@ Similarly, two official variations of the hex sticker are provided:
 <img src="img/arrow-logo_hex_white-txt_black-bg.png" width="40%">
 </p>
 
-The repository also includes separate files for "Triple Chevron" logomark without any accompanying text:
+The repository also includes files for "Triple Chevron" logomark on its own
 
 <p align="center">
 <img src="img/arrow-logo_chevrons_black-txt_white-bg.png" width="40%">
@@ -66,7 +71,7 @@ The repository also includes separate files for "Triple Chevron" logomark withou
 <img src="img/arrow-logo_chevrons_white-txt_black-bg.png" width="40%">
 </p>
 
-There are also files for the "Apache Arrow" logotype without the logomark:
+and the "Apache Arrow" logotype on its own:
 
 <p align="center">
 <img src="img/arrow-logo_text_black-txt_white-bg.png" width="40%">
@@ -75,25 +80,22 @@ There are also files for the "Apache Arrow" logotype without the logomark:
 </p>
 
 
+## Using the Apache Arrow logos {#using-the-logo}
 
+### General guidelines
 
-## Official usage guidelines
-
-Usage guidelines for official logos are quite similar across many brands, and the typical rules apply for the Apache Arrow logo
+Usage guidelines for official logos are quite similar across many brands, and Apache Arrow is no exception. The core principle is to respect the visual integrity of the logo. Guidelines that will help you do so include:
 
  - Please don't visually distort the logos
  - Please reproduce at a clearly visible resolution 
  - Please don't modify the text or the design of the chevrons
  - Please don't add additional text to the logotype or imagery to the chevrons
  
-In general, the principles laid out in [Apache Foundation Style Guide](https://apache.org/foundation/press/kit/ApacheFoundation_StyleGuide.pdf) for usage of the Apache logo are also appropriate for the Apache Arrow logo
+In general, the principles laid out in the [Apache Foundation Style Guide](https://apache.org/foundation/press/kit/ApacheFoundation_StyleGuide.pdf) for usage of the Apache logo are also appropriate for the Apache Arrow logo. If you're in a situation where you want to refer formally to the Apache Arrow project you should adhere to these guidelines pretty closely and avoid modifying the official logos.
 
+### Regarding unofficial images
 
-## Creating unofficial images
-
-Okay that was the boring part, and we had to include it because Apache Arrow is a large project and it genuinely does need to have some meaningful visual identity. If you're in a situation where you want to refer formally to the Apache Arrow project you should adhere to those guidelines pretty closely. 
-
-That said, not everything in life is official. The purpose of the visual identity guidelines is to provide guidance on what to do when you *do* need to refer to Apache Arrow in an official or formal way. It's not meant to prevent people from having fun creating unofficial images when appropriate.
+That said, there are occasions where you may want to use the logo unofficially. The purpose of the visual identity guidelines as described so far is to provide guidance on what to do when you *do* need to refer to Apache Arrow in an official or formal way. It's not meant to prevent people from having fun creating unofficial images when appropriate. 
 
 To provide useful guidance on when unofficial images are acceptable and unacceptable, here are two examples:
 
@@ -109,5 +111,9 @@ The image on the right adds extra orange colored chevrons to the dark themed hex
 
 Many other context-appropriate informal variations can be imagined. For example, if Apache Arrow were being used to power a generative art system, the background fill to the logo might not be a solid color, it could be the art itself. Again, the overriding principle is that the visual integrity of the Apache Arrow logo remains intact and the modifications are appropriate to the context in which it is used.
 
+
+## List of provided logo files {#files}
+
+To be added on the actual page.
 
 
