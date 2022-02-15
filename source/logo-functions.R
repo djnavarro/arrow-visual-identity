@@ -7,10 +7,11 @@ library(tibble)
 library(showtext)
 library(magick)
 library(hexify) # remotes::install_github("djnavarro/hexify")
+library(svglite)
 
 
-export_logo <- function(plot, path, height = 6, background = NULL) {
-  ggsave(path, plot, width = 6, height = height, dpi = 300, bg = background)
+export_logo <- function(plot, path, width = 6, height = 6, background = NULL, device = NULL, ...) {
+  ggsave(path, plot, width = width, height = height, dpi = 300, bg = background, device = device, ...)
 }
 
 export_hex <- function(plot, path, border, background = NULL, border_opacity = 100) {
