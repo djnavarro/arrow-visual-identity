@@ -1,6 +1,5 @@
 # generate Apache Arrow logos programmatically
 
-library(svglite)
 library(ggplot2)
 library(dplyr)
 library(tidyr)
@@ -8,6 +7,7 @@ library(tibble)
 library(showtext)
 library(magick)
 library(hexify) # remotes::install_github("djnavarro/hexify")
+library(svglite)
 
 
 export_logo <- function(plot, path, width = 6, height = 6, background = NULL, device = NULL, ...) {
