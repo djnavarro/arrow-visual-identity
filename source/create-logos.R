@@ -13,14 +13,30 @@ logo_filename <- function(type, colour, background, format) {
   )
 }
 
-create_logo_horizontal <- function(dir, colour, background, format = "png", crop = TRUE) {
+create_logo_horizontal <- function(dir, colour, background, format = "png", crop = TRUE, ...) {
   pic <- specify_logo_horizontal(colour, background, crop = crop)
   fname <- logo_filename("horizontal", colour, background, format)
+  height <- ifelse(crop, 3.12, 6)
+  width <- 6
+  
+  # this fixes it... svgs don't have an analog of dpi, svglite interprets the
+  # relative height of text vs data differently. sigh. multiplying by 3 is 
+  # essentially the same as treating as if the raster version of the image were
+  # at 100dpi rather than the 300dpi value at which it was exported... next time,
+  # best to calibrate for 100dpi from the beginning so that svg and png are aligned
+  if(format == "svg") {
+    height <- height * 3
+    width <- width * 3
+  }
+  
   export_logo(
     plot = pic,
     path = file.path(dir, fname), 
     background = background, 
-    height = ifelse(crop, 3.12, 6) 
+    height = height,
+    width = width,
+    device = ifelse(format == "svg", svglite, NULL),
+    ...
   )
 }
 
